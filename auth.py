@@ -5,7 +5,7 @@ import os
 USER_FILE = "users.json"
 
 def hash_password(password):
-    return hashlib.sha256(password.encode()).hexdigest
+    return hashlib.sha256(password.encode()).hexdigest()
 
 def load_users():
     if not os.path.exists(USER_FILE):

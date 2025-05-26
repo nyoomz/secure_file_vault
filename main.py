@@ -1,7 +1,7 @@
 import os
 import getpass
 from auth import register_user, login_user
-from vault import load_key, encrypt_file, decrypt_file
+from vault import encrypt_file, decrypt_file
 from datetime import datetime
 
 LOG_FILE = "logs/vault_log.txt"
@@ -13,7 +13,6 @@ def log_action(action, username="System"):
         log.write(f"{timestamp} - {username} - {action}\n")
 
 def user_menu(username):
-    key = load_key()
     while True:
         print(f"\nWelcome, {username}!")
         print("1. Encrypt a file")
@@ -25,7 +24,7 @@ def user_menu(username):
         if choice == "1":
             filepath = input("Enter path to the file to encrypt: ").strip()
             if os.path.isfile(filepath):
-                encrypt_file(filepath, key)
+                encrypt_file(filepath)
                 log_action(f"Encrypted file: {filepath}", username)
             else:
                 print("File not found.")
@@ -33,7 +32,7 @@ def user_menu(username):
             filename = input("Enter encrypted filename to decrypt: ").strip()
             encrypted_path = os.path.join(ENCRYPTED_DIR, filename)
             if os.path.isfile(encrypted_path):
-                decrypt_file(encrypted_path, key)
+                decrypt_file(encrypted_path)
                 log_action(f"Decrypted file: {filename}", username)
             else:
                 print("File not found")

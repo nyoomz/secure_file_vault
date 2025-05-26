@@ -4,21 +4,14 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-KEY_FILE = ".vaultkey"
 ENCRYPTED_DIR = "encrypted_files"
 
-def generate_key():
-    key = Fernet.generate_key()
-    with open(KEY_FILE, "wb") as key_file:
-        key_file.write(key)
-    return key
+VAULT_KEY = os.getenv("VAULT_KEY")
 
-def load_key():
-    if os.path.exists(KEY_FILE):
-        with open(KEY_FILE, "rb") as key_file:
-            return key_file.read()
-    else:
-        return generate_key()
+if not VAULT_KEY:
+    raise ValueError("Missing VAULT_KEY in .env file.")
+
+fernet = Fernet(VAULT_KEY.encode())
 
 def encrypt_file(filepath, key):
     with open(filepath, "rb") as f:

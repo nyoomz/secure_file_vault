@@ -2,3 +2,22 @@
 2025-05-27 02:39:49.836454 - milo - Logout
 2025-05-27 02:41:08.154291 - ehe - Login
 2025-05-27 02:41:10.557275 - ehe - Logout
+2025-05-28 03:48:00.730434 - milo - Login
+2025-05-28 03:50:47.519358 - milo - Login
+2025-05-28 03:51:12.258640 - milo - Encrypted file: C:\Users\leahc\Downloads\test.txt
+2025-05-28 03:51:36.881282 - milo - Decrypted file: C:\secure_file_vault\encrypted_files\test.txt.enc
+2025-05-28 03:54:34.337606 - BatchProcessor - Encrypted: test.txt
+2025-05-28 03:54:34.339751 - milo - Encrypted folder: C:\Users\leahc\Downloads\New folder
+2025-05-28 03:56:48.237822 - BatchProcessor - Encrypted: 22.txt
+2025-05-28 03:56:48.242683 - BatchProcessor - Encrypted: New Text Document.txt
+2025-05-28 03:56:48.245261 - milo - Encrypted folder: C:\Users\leahc\Downloads\New folder
+2025-06-04 04:53:04.568857 - babu - Login
+2025-06-04 04:53:50.226254 - babu - Logout
+2025-06-04 04:55:00.106496 - milo - Login
+2025-06-04 04:55:06.588981 - milo - Logout
+2025-06-04 05:11:30 | BATCH_PROCESS | DECRYPT_FAILED_INVALID_TOKEN | encrypted_files\22.txt.enc
+2025-06-04 05:11:30 | BATCH_PROCESS | DECRYPT_FAILED_INVALID_TOKEN | encrypted_files\decrypted_test.txt
+2025-06-04 05:11:30 | BATCH_PROCESS | DECRYPT_FAILED_INVALID_TOKEN | encrypted_files\New Text Document.txt.enc
+2025-06-04 05:11:30 | BATCH_PROCESS | DECRYPT_FAILED_INVALID_TOKEN | encrypted_files\test.txt.enc
+2025-06-04 05:23:15 | BATCH_PROCESS | ENCRYPT | C:\Users\leahc\Downloads\archive\student_habits_performance.csv
+2025-06-04 05:24:30 | BATCH_PROCESS | DECRYPT | C:\Users\leahc\Downloads\archive\student_habits_performance.csv

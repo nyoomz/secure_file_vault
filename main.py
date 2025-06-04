@@ -12,7 +12,7 @@ def log_action(action, username="System"):
         timestamp = datetime.now()
         log.write(f"{timestamp} - {username} - {action}\n")
 
-def user_menu(username):
+def user_menu(username, fernet):
     while True:
         print(f"\nWelcome, {username}!")
         print("1. Encrypt a file")
@@ -24,15 +24,14 @@ def user_menu(username):
         if choice == "1":
             filepath = input("Enter path to the file to encrypt: ").strip()
             if os.path.isfile(filepath):
-                encrypt_file(filepath)
-                log_action(f"Encrypted file: {filepath}", username)
+                encrypt_file(fernet, filepath)
             else:
                 print("File not found.")
         elif choice == "2":
             filename = input("Enter encrypted filename to decrypt: ").strip()
-            encrypted_path = os.path.join(ENCRYPTED_DIR, filename)
-            if os.path.isfile(encrypted_path):
-                decrypt_file(encrypted_path)
+            filepath = os.path.join(ENCRYPTED_DIR, filename)
+            if os.path.isfile(filepath):
+                decrypt_file(fernet, filepath)
                 log_action(f"Decrypted file: {filename}", username)
             else:
                 print("File not found")
@@ -64,11 +63,11 @@ def main():
             else:
                 print("Username already exists")
         elif choice == '2':
-            username = input("Enter username: ").strip()
+            username, fernet = input("Enter username: ").strip()
             password = getpass.getpass("Enter password: ")
             if login_user(username, password):
                 log_action("Login", username)
-                user_menu(username)
+                user_menu(username, fernet)
             else:
                 print("Login failed.")
         elif choice == "3":

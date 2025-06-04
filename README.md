@@ -81,28 +81,28 @@ secure_file_vault/
 ## Screenshots
 
 ### Welcome / Start Screen
-![Start](screenshots\start.png)
+![Start](screenshots/start.png)
 ### User Registration
-![Registration](screenshots\register.png)
+![Registration](screenshots/register.png)
 ### Login Process
-![Login](screenshots\login.png)
+![Login](screenshots/login.png)
 ### File Encryption 
-![Encryption](screenshots\encrypt_file.png)
-![Encryption File](screenshots\encrypt_file_2.png)
+![Encryption](screenshots/encrypt_file.png)
+![Encryption File](screenshots/encrypt_file_2.png)
 ### File Decryption 
-![Decryption](screenshots\decrypt_file.png)
-![Decryption File](screenshots\decrypt_file_2.png)
+![Decryption](screenshots/decrypt_file.png)
+![Decryption File](screenshots/decrypt_file_2.png)
 ### File Decryption (Error)
-![File Decryption Error](screenshots\decrypt_file_fail_1.png)
-![File Decryption Error 2](screenshots\decrypt_file_fail_2.png)
+![File Decryption Error](screenshots/decrypt_file_fail_1.png)
+![File Decryption Error 2](screenshots/decrypt_file_fail_2.png)
 ### Batch Processing Encryption
-![Batch Processing Enc](screenshots\batch_enc.png)
-![Batch Processing Enc 2](screenshots\batch_enc_2.png)
+![Batch Processing Enc](screenshots/batch_enc.png)
+![Batch Processing Enc 2](screenshots/batch_enc_2.png)
 ### Batch Processing Decryption
-![Batch Processing Enc](screenshots\batch_dec.png)
-![Batch Processing Enc 2](screenshots\batch_dec_2.png)
+![Batch Processing Enc](screenshots/batch_dec.png)
+![Batch Processing Enc 2](screenshots/batch_dec_2.png)
 ### Audit Log Sample
-![App Screenshot](screenshots\logs.png)
+![App Screenshot](screenshots/logs.png)
 
 
 

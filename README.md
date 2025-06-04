@@ -7,7 +7,8 @@ This is submitted by: Leah Mae R. Cabayao / BSIT 3-1
 
 ## Demo
 
-[![Demo](https://img.youtube.com/vi/-8L2q95ThyA/0.jpg](https://youtu.be/-8L2q95ThyA)
+[![Demo](https://img.youtube.com/vi/-8L2q95ThyA/0.jpg)](https://www.youtube.com/watch?v=-8L2q95ThyA)
+
 
 
 ## Features

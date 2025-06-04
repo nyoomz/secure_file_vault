@@ -12,22 +12,34 @@ def log_action(action, username="System"):
         timestamp = datetime.now()
         log.write(f"{timestamp} - {username} - {action}\n")
 
+def intro_border(text):
+    print ("\n")
+    print("=" * 50)
+    print("|{:^48}|".format(""))
+    print("|{:^48}|".format(text))
+    print("|{:^48}|".format(""))
+    print("=" * 50)
+
 def user_menu(username, fernet):
     while True:
+        intro_border("  MENU   ")
         print(f"\nWelcome, {username}!")
         print("1. Encrypt a file")
         print("2. Decrypt a file")
         print("3. Logout")
     
-        choice = input("Select an option: ")
+        choice = input("\nChoose an option: ")
 
         if choice == "1":
+            intro_border(" ENCRYPT FILE ")
             filepath = input("Enter path to the file to encrypt: ").strip()
             if os.path.isfile(filepath):
-                encrypt_file(fernet, filepath)
+                encrypt_file(fernet, filepath, username)
+                log_action(f"Encrypted file: {filename}", username)
             else:
                 print("File not found.")
         elif choice == "2":
+            intro_border(" DECRYPT FILE ")
             filename = input("Enter encrypted filename to decrypt: ").strip()
             filepath = os.path.join(ENCRYPTED_DIR, filename)
             if os.path.isfile(filepath):
@@ -49,29 +61,28 @@ def main():
         os.makedirs(ENCRYPTED_DIR)
 
     while True:
-        print("1. Register")
+        intro_border(" SECURE FILE VAULT ")    
+        print("\n1. Register")
         print("2. Login")
         print("3. Exit")
 
-        choice = input("Choose an option: ")
+        choice = input("\nChoose an option: ")
 
         if choice == "1":
-            username = input("Enter username: ").strip()
+            intro_border(" REGISTRATION ")
+            username = input("\nEnter username: ").strip()
             password = getpass.getpass("Enter password: ")
-            if register_user(username, password):
-                print("Registration complete")
-            else:
-                print("Username already exists")
+            register_user(username, password)
+            log_action("Registration", username)
         elif choice == '2':
-            username, fernet = input("Enter username: ").strip()
+            intro_border(" LOGIN ")
+            username = input("\nEnter username: ").strip()
             password = getpass.getpass("Enter password: ")
-            if login_user(username, password):
-                log_action("Login", username)
-                user_menu(username, fernet)
-            else:
-                print("Login failed.")
+            fernet = login_user(username, password)
+            log_action("Login", username)
+            user_menu(username, fernet)
         elif choice == "3":
-            print("Exiting...")
+            print("Thank you ! Exiting...")
             break
         else:
             print("Invalid option.")

@@ -1,23 +1,25 @@
-2025-05-27 02:32:47.669132 - milo - Login
-2025-05-27 02:39:49.836454 - milo - Logout
-2025-05-27 02:41:08.154291 - ehe - Login
-2025-05-27 02:41:10.557275 - ehe - Logout
-2025-05-28 03:48:00.730434 - milo - Login
-2025-05-28 03:50:47.519358 - milo - Login
-2025-05-28 03:51:12.258640 - milo - Encrypted file: C:\Users\leahc\Downloads\test.txt
-2025-05-28 03:51:36.881282 - milo - Decrypted file: C:\secure_file_vault\encrypted_files\test.txt.enc
-2025-05-28 03:54:34.337606 - BatchProcessor - Encrypted: test.txt
-2025-05-28 03:54:34.339751 - milo - Encrypted folder: C:\Users\leahc\Downloads\New folder
-2025-05-28 03:56:48.237822 - BatchProcessor - Encrypted: 22.txt
-2025-05-28 03:56:48.242683 - BatchProcessor - Encrypted: New Text Document.txt
-2025-05-28 03:56:48.245261 - milo - Encrypted folder: C:\Users\leahc\Downloads\New folder
-2025-06-04 04:53:04.568857 - babu - Login
-2025-06-04 04:53:50.226254 - babu - Logout
-2025-06-04 04:55:00.106496 - milo - Login
-2025-06-04 04:55:06.588981 - milo - Logout
-2025-06-04 05:11:30 | BATCH_PROCESS | DECRYPT_FAILED_INVALID_TOKEN | encrypted_files\22.txt.enc
-2025-06-04 05:11:30 | BATCH_PROCESS | DECRYPT_FAILED_INVALID_TOKEN | encrypted_files\decrypted_test.txt
-2025-06-04 05:11:30 | BATCH_PROCESS | DECRYPT_FAILED_INVALID_TOKEN | encrypted_files\New Text Document.txt.enc
-2025-06-04 05:11:30 | BATCH_PROCESS | DECRYPT_FAILED_INVALID_TOKEN | encrypted_files\test.txt.enc
-2025-06-04 05:23:15 | BATCH_PROCESS | ENCRYPT | C:\Users\leahc\Downloads\archive\student_habits_performance.csv
-2025-06-04 05:24:30 | BATCH_PROCESS | DECRYPT | C:\Users\leahc\Downloads\archive\student_habits_performance.csv
+2025-06-04 17:57:06.156203 - abcdef - Registration
+2025-06-04 18:03:32.816514 - abcdef - Login
+2025-06-04 18:07:06.237750 - None - Login
+2025-06-04 18:07:44.814414 - abcdef - Login
+2025-06-04 18:09:09.988611 - abcdef - Login
+2025-06-04 18:12:49.313395 - abcdef - Logout
+2025-06-04 18:12:55.706651 - efghi - Registration
+2025-06-04 18:13:01.375881 - efghi - Login
+2025-06-04 18:15:37.555517 - efghi - Login
+2025-06-04 18:19:39.557635 - efghi - Logout
+2025-06-04 18:19:47.584517 - abcdef - Login
+2025-06-04 18:20:12.246831 - abcdef - Decrypted file: C:\Users\leahc\Downloads\references.pdf
+2025-06-04 18:20:21.965842 - abcdef - Logout
+2025-06-04 18:22:02.004127 - abcde - Login
+2025-06-04 18:22:14.574732 - abcde - Decrypted file: C:\Users\leahc\Downloads\references.pdf
+2025-06-04 18:23:15.375181 - abcde - Decrypted file: C:\secure_file_vault\encrypted_files\references.pdf.enc
+2025-06-04 18:23:26.051859 - abcde - Logout
+2025-06-04 18:23:30.524664 - abcdef - Login
+2025-06-04 18:23:35.327466 - abcdef - Decrypted file: C:\secure_file_vault\encrypted_files\references.pdf.enc
+2025-06-04 18:26:04.625459 - abcdef - Logout
+2025-06-04 18:26:13.472636 - efghi - Login
+2025-06-04 18:27:02.078930 - efghi - Decrypted file: C:\secure_file_vault\encrypted_files\references.pdf.enc
+2025-06-04 18:29:32.400449 - efghi - Logout
+2025-06-04 18:32:15 - BATCH_PROCESS - ENCRYPT - C:\Users\leahc\Downloads\BrooklynNineNine_1x02_720p-HDTV.en\Brooklyn Nine Nine - 1x02 - The Tagger.720p HDTV.en.srt
+2025-06-04 18:33:16 - BATCH_PROCESS - DECRYPT - C:\Users\leahc\Downloads\BrooklynNineNine_1x02_720p-HDTV.en\Brooklyn Nine Nine - 1x02 - The Tagger.720p HDTV.en.srt

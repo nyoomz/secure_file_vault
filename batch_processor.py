@@ -12,7 +12,7 @@ def log_action(action, filename):
     os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     with open(LOG_FILE, "a") as log_file:
-        log_file.write(f"{timestamp} | BATCH_PROCESS | {action.upper()} | {filename}\n")
+        log_file.write(f"{timestamp} - BATCH_PROCESS - {action.upper()} - {filename}\n")
 
 # derive a key from a password using SHA-256 (demo version)
 def load_or_generate_key(password: str):

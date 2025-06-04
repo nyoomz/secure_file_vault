@@ -63,8 +63,8 @@ def login_user(username, password):
     #derive the Fernet key using the stored salt
     salt = base64.b64decode(salts[username])
     fernet = derive_fernet_key(password, salt)
-    print(f"[+] Login successful. Welcome, {username}.")
-    return username, fernet
+    print(f"[+] Login successful.")
+    return fernet
 
 #derive a Fernet key from the password and salt using PBKDF2
 #each user has a unique key derived from their password and salt

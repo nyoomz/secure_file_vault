@@ -1,5 +1,5 @@
 import os
-from cryptography.fernet import Fernet
+from cryptography.fernet import Fernet, InvalidToken
 from datetime import datetime
 
 ENCRYPTED_DIR = "encrypted_files"   #directory to store encrypted files
@@ -21,13 +21,19 @@ def encrypt_file(fernet, filepath):
 
 #decrpy file using provided fernet obj
 def decrypt_file(fernet, encrypted_path):
-    with open(encrypted_path, "rb") as f:
-        encrypted_data = f.read()
-    decrypted_data = fernet.decrypt(encrypted_data)
+    try:
+        with open(encrypted_path, "rb") as f:
+            encrypted_data = f.read()
+        decrypted_data = fernet.decrypt(encrypted_data)
 
-    filename = os.path.basename(encrypted_path).replace(".enc", "")
-    decrypted_path = os.path.join(ENCRYPTED_DIR, "decrypted_" + filename)
-    with open(decrypted_path, "wb") as f:
-        f.write(decrypted_data)
+        filename = os.path.basename(encrypted_path).replace(".enc", "")
+        decrypted_path = os.path.join(ENCRYPTED_DIR, "decrypted_" + filename)
+        with open(decrypted_path, "wb") as f:
+            f.write(decrypted_data)
 
-    print(f"[+] Decrypted → {decrypted_path}")
+        print(f"[+] Decrypted → {decrypted_path}")
+    
+    except InvalidToken:
+        print("[!] ERROR: Decryption failed. You can't decrypt this file as you are not its owner or the file is not encrypted.")
+    except Exception as e:
+        print(f"[!] ERROR: An unexpected error occurred: {e}")

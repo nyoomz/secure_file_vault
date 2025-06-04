@@ -3,10 +3,11 @@
 
 The Secure File Vault is a command-line Python application that allows users to securely encrypt, decrypt, and manage files. It uses modern cryptographic practices to ensure that only authorized users can access sensitive data. This project is a requirement for the course INTECH 3201 – Integrative Programming and Technologies II.
 
+This is submitted by: Leah Mae R. Cabayao / BSIT 3-1
 
 ## Demo
 
-Insert gif or link to demo
+[![Demo](https://img.youtube.com/vi/-8L2q95ThyA/0.jpg](https://youtu.be/-8L2q95ThyA)
 
 
 ## Features

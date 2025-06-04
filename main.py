@@ -32,9 +32,10 @@ def user_menu(username, fernet):
 
         if choice == "1":
             intro_border(" ENCRYPT FILE ")
-            filepath = input("Enter path to the file to encrypt: ").strip()
+            filename = input("Enter path to the file to encrypt: ").strip()
+            filepath = filename
             if os.path.isfile(filepath):
-                encrypt_file(fernet, filepath, username)
+                encrypt_file(fernet, filepath)
                 log_action(f"Encrypted file: {filename}", username)
             else:
                 print("File not found.")

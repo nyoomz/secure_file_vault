@@ -23,3 +23,20 @@
 2025-06-04 18:29:32.400449 - efghi - Logout
 2025-06-04 18:32:15 - BATCH_PROCESS - ENCRYPT - C:\Users\leahc\Downloads\BrooklynNineNine_1x02_720p-HDTV.en\Brooklyn Nine Nine - 1x02 - The Tagger.720p HDTV.en.srt
 2025-06-04 18:33:16 - BATCH_PROCESS - DECRYPT - C:\Users\leahc\Downloads\BrooklynNineNine_1x02_720p-HDTV.en\Brooklyn Nine Nine - 1x02 - The Tagger.720p HDTV.en.srt
+2025-06-04 19:58:07.480751 - john - Registration
+2025-06-04 19:58:40.561657 - john - Login
+2025-06-04 20:01:53.102382 - 1234 - Registration
+2025-06-04 20:02:23.737842 - 1234 - Login
+2025-06-04 20:05:32.447993 - 12345 - Registration
+2025-06-04 20:06:01.582254 - 12345 - Login
+2025-06-04 20:11:15.915262 - bsit - Registration
+2025-06-04 20:11:38.204514 - bsit - Login
+2025-06-04 20:12:32.485528 - bsit - Encrypted file: C:\Users\leahc\Downloads\File 1.txt
+2025-06-04 20:13:12.001002 - bsit - Decrypted file: C:\secure_file_vault\encrypted_files\File 1.txt.enc
+2025-06-04 20:13:49.369352 - bsit - Logout
+2025-06-04 20:13:54.978052 - admins - Registration
+2025-06-04 20:14:03.823642 - admins - Login
+2025-06-04 20:14:11.554267 - admins - Decrypted file: C:\secure_file_vault\encrypted_files\File 1.txt.enc
+2025-06-04 20:14:36.322845 - admins - Logout
+2025-06-04 20:15:32 - BATCH_PROCESS - ENCRYPT - C:\Users\leahc\Downloads\BrooklynNineNine_1x02_720p-HDTV.en\Brooklyn Nine Nine - 1x02 - The Tagger.720p HDTV.en.srt
+2025-06-04 20:16:35 - BATCH_PROCESS - DECRYPT - C:\Users\leahc\Downloads\BrooklynNineNine_1x02_720p-HDTV.en\Brooklyn Nine Nine - 1x02 - The Tagger.720p HDTV.en.srt
